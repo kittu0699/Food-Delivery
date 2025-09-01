@@ -6,13 +6,13 @@ import { StoreContext } from '../../context/StoreContext';
 
 const Navbar = ({setShowLogin}) => {
 
-const [menu,setMenu] = useState("menu");
+const [menu,setMenu] = useState("home");
 
 const {getTotalCartAmount} =useContext(StoreContext)
 
   return (
     <div className='navbar'>
-        <Link to='/'><img src={assets.logo} alt="" className="logo" /></Link>
+        <Link to='/'><img src={assets.logo} alt="" className="logo" /></Link> 
 
         <ul className="navbar-menu">
           <Link to='/' onClick = {() =>setMenu("home")} className={menu==="home"?"active":""}>Home</Link>
