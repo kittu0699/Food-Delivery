@@ -4,8 +4,6 @@ import { assets } from '../../assets/assets'
 
 const Footer = () => {
 
-  const [home,setHome] = useState("home");
-
   return (
     <div className='footer' id='footer'>
         <div className="footer-content">
@@ -21,7 +19,7 @@ const Footer = () => {
                 <div className="footer-content-center">
                     <h2>COMPANY</h2>
                     <ul>
-                        <li><a href="#" onClick={() => setHome("home")} className={home==="home" ? "active" : ""}> Home</a></li>
+                        <li><a href="#"> Home</a></li>
                         <li>About us</li>
                         <li>Delivery</li>
                         <li>Privacy policy</li>
